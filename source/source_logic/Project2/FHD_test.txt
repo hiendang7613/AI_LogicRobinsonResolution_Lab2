@@ -1,0 +1,99 @@
+﻿1/ Các sinh viên của lớp cct1?
+?-sinhVienCuaLop(X,ctt1).
+X = lyVanA ;
+X = traVanA.
+
+2/ Các giáo viên của bộ môn Thị giác máy tính.
+?-giaoVienThuocBoMon(X,thiGiacMayTinh_bm).
+X = leVanC ;
+X = nguyenThiB.
+
+3/ Giáo viên chủ nhiệm của Trà Văn B là ai?
+?-chuNhiemCuaSinhVien(X,traVanB).
+X = tranVanC.
+
+4/ Trưởng Khoa là ai?
+?-truongKhoa(X).
+X = nguyenThiA.
+
+5/ Khoa có các lớp nào?
+?-lop(X).
+X = ctt1 ;
+X = ctt2 ;
+X = ctt3 ;
+X = ctt4 ;
+X = ctt5.
+
+6/ Lớp ctt2 là thuộc bộ môn nào
+?-lopTheoBoMon(ctt2,X).
+X = khoaHocMayTinh_bm.
+
+7/ Chuyên ngành Khoa học máy tính có các bộ môn nào?
+?-boMonCuaNganh(X,khoaHocMayTinh).
+X = khoaHocMayTinh_bm.
+
+8/ Trà Văn A là sinh viên của lớp nào?
+?-sinhVienCuaLop(traVanA,X).
+X = ctt1.
+
+
+9/ Các giáo sư của khoa?
+?-giaoSu(X).
+X = nguyenThiA.
+
+10/ Các thạc sĩ của chuyên ngành Khoa học máy tính
+?-thacSiCuaNganh(X,khoaHocMayTinh).
+X = tranVanC ;
+false.
+
+11/ Các giáo sư của chuyên ngành Khoa học máy tính
+?-giaoSuCuaNganh(X,khoaHocMayTinh).
+X = nguyenThiA .
+
+12/ Các sinh viên theo chuyên ngành kỹ thuật phần mềm?
+?-sinhVienTheoChuyenNganh(X,kyThuatPhanMem).
+X = lyVanA ;
+X = traVanA ;
+false.
+
+13/ Khoa có các chuyên ngành nào?
+?-chuyenNganh(X).
+X = kyThuatPhanMem ;
+X = heThongThongTin ;
+X = congNgheTriThuc ;
+X = khoaHocMayTinh ;
+X = thiGiacMayTinh ;
+X = mangMayTinhVaVienThong.
+
+14/ Giáo viên Nguyễn Thị A giảng dạy Chuyên ngành nào?
+?-giaoVienThuocChuyenNganh(nguyenThiA, X).
+X=khoaHocMayTinh.
+
+15/ Thầy Trần Văn C có thể làm trưởng khoa được không?
+?-coTheLamTruongKhoa(tranVanC).
+false.
+
+16/ Các trưởng bộ môn?
+?-truongBoMon(X,_).
+X = tranVanB.
+
+17/ Ai có thể làm phó khoa?
+?-coTheLamPhoKhoa(X).
+false.
+
+
+18/ Các tiến sĩ của Ngành Hệ Thống Thông Tin.
+?-tienSiCuaNganh(X,heThongThongTin).
+X = tranVanA ;
+X = tranVanB ;
+false.
+
+
+19/Lớp ctt2 là lớp của chuyên ngành nào?
+?-lopTheoChuyenNganh(ctt2, X).
+X = khoaHocMayTinh.
+
+20/ Phó khoa là ai?
+?-phoKhoa(X).
+X = dangVanB ;
+X = leVanC.

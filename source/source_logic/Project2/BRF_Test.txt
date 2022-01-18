@@ -1,0 +1,98 @@
+1/ Is P.Charles P.Diana's husband?
+?- husband(p_Charles,p_Diana).
+false.
+
+2/ Is P.Charles C.P.Bowles's husband?
+?- husband(p_Charles,c_p_Bowles).
+true.
+
+3/ Who is P.Andrew's mother?
+?- mother(X,p_Andrew).
+X = q_ElizabethII
+
+4/ Who is M.G.Tindall's uncle?
+?- uncle(X,m_g_Tindall).
+X = peter_Phillips ;
+false.
+
+5/ Is I.Phillips A.Kelly's daughter?
+?- daughter(i_Phillips,a_Kelly).
+true.
+
+6/ Who is P.Charles's grandchildren?
+?- grandchild(X,p_Charles).
+X = p_George ;
+X = p_Charlotte ;
+false.
+
+7/ Who is P.Charles's grandson?
+?- grandson(X,p_Charles).
+X = p_George ;
+false.
+
+8/ Who is Q.Elizabeth II's grandchildren?
+?- grandchild(X,q_ElizabethII).
+X = p_William ;
+X = p_Harry ;
+X = peter_Phillips ;
+X = z_Phillips ;
+X = p_Beatrice ;
+X = p_Eugenie ;
+X = j_v_Severn ;
+X = l_l_m_Windsor ;
+false.
+
+9/ Is P.William P.Harry's brother ?
+?- brother(p_Harry,p_William).
+true.
+
+10/ Is M.G.Tindall P.Anne's grandson?
+?- grandson(m_g_Tindall,p_Anne).
+true.
+
+11/ Is P.George P.Anne's grandson?
+?- grandson(p_George,p_Anne).
+false.
+
+12/ Is P.George P.William's son?
+?- son(p_George,p_William).
+true.
+
+13/ Is P.Phillips P.Diana's son?
+?- son(p_Phillips,p_Diana).
+false.
+
+14/ Is P.William P.Diana's son?
+?- son(p_William,p_Diana).
+true.
+
+15/ Who is P.Anne's grandchildren?
+?- grandchild(X,p_Anne).
+X = s_Phillips ;
+X = i_Phillips ;
+X = m_g_Tindall ;
+false.
+
+16/ Who is P.Andrew's grandchildren?
+?- grandchild(X,p_Andrew).
+false.
+
+17/ Who is P.Phillip's granddaughters?
+?- granddaughter(X,p_Phillip).
+X = z_Phillips ;
+X = p_Beatrice ;
+X = p_Eugenie ;
+X = l_l_m_Windsor ;
+false.
+
+18/ Is C.M.Phillips P.Anne's husband??
+?- husband(c_m_Phillips,p_Anne).
+false.
+
+19/ Is T.Laurence P.Anne's husband??
+?- husband(t_Laurence,p_Anne).	
+true.
+
+20/ Is P.Harry P.Charles's son??
+?- son(p_Harry,p_Charles).
+true.		
